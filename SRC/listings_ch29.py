@@ -67,7 +67,7 @@ def frequencies(words):
             freq_dict[word] += 1                #D
         else:                                   #E
             freq_dict[word] = 1                 #F
-       return freq_dict                         #G
+    return freq_dict                         #G
 
 freq_dict = frequencies(words)                  #H
 #A 빈 사전으로 초기화
