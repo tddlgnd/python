@@ -7,7 +7,7 @@ serviceurl = 'https://maps.googleapis.com/maps/api/geocode/json?'
 
 while True:
     address = input('Enter location: ')
-    my_api_key = "AIzaSyBm2Rq1B7cZp_BKz1GcLtrqffIepkM5-_8"
+    my_api_key = "가입한 인증키를 여기에"
     if len(address) < 1: break
 
     url = serviceurl + urllib.parse.urlencode({'address': address}) + "&" + urllib.parse.urlencode({'key': my_api_key})
