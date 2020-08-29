@@ -84,45 +84,33 @@ account1.withdraw(5000)
 홍길동님의 계좌 1234-0001의 잔고는 1,500원입니다.
 계좌 잔고는 1500원으로 인출 요구 금액 5000원보다 작습니다.
 '''
-
 class BankAccount:
     def __init__(self, name, account_num, balance=0):
         self.name = name
         self.account_num = account_num
         self.balance = balance
     
-    def get_name():
-      return self.name
-    
-    def get_account_num():
-      return self.account_num
-    
     def get_balance():
       return self.balance
     
-    def deposit(self, amount):
-        self.balance += amount
-        print('{}원이 입금되었습니다. 잔고는 {}원입니다.'.format(amount,\
-                                                 self.balance))
+    def deposit(self, money):
+        self.balance += money
+        print(money, '원이 입금되었습니다. 잔고는 ', self.balance, '원입니다.')
         return self.balance
   
-    def withdraw(self, amount):
-        if self.balance - amount > 0 :
-            self.balance -= amount
+    def withdraw(self, money):
+        if self.balance - money > 0 :
+            self.balance -= money
         else:
-          
-            print('계좌 잔고는 {}원으로 인출 요구 금액 '\
-          '{}원보다 작습니다.'.format(self.balance, amount))
+            print('계좌 잔고는 ', self.balance, '원으로 인출 요구 금액 ', money, '원보다 작습니다.')
 
     def __str__(self):
-      return '{}님의 계좌 {}의 잔고는 {:,}원입니다.'.format(self.name,\
-                                             self.account_num, self.balance)
-
-            
+      return str(self.name) + '님의 계좌 ' + str(self.account_num) + '의 잔고는 ' + str(self.balance) +'원입니다.'
+      
 account1 = BankAccount("홍길동", "1234-0001")
 print(account1)
 account1.deposit(2000)
 print(account1)
 account1.withdraw(500)
 print(account1)
-account1.withdraw(5000)
+account1.withdraw(5000)      
