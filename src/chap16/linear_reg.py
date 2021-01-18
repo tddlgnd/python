@@ -14,7 +14,7 @@ reg.fit(X, y)				# 학습
 plt.scatter(X, y, color='black')
 
 # 학습 데이터를 입력으로 하여 예측값을 계산한다.
-y_pred = reg.predict(X)mmmnnn
+y_pred = reg.predict(X)mmmnnnxxx
 
 # 학습 데이터와 예측값으로 선그래프로 그린다. 
 # 계산된 기울기와 y 절편을 가지는 직선이 그려진다. 
