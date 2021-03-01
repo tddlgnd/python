@@ -1,6 +1,6 @@
 ﻿##
 #	이 프로그램은 라스베가스에서 목표 금액을 획득할 확률을 계산한다. 
-#
+##
 import random
 
 initial_money = 50
