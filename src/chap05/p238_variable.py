@@ -40,3 +40,14 @@ def myfunc() :
 myfunc()
 print(gx)
 
+
+# 5. global을 사용하면 함수 안에서 전역변수 변경할 수 있다.
+gx = 100
+
+def myfunc() :
+    global gx
+    gx = 200    
+    print(gx)
+
+myfunc()
+print(gx)
