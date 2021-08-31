@@ -7,12 +7,12 @@ class BankAccount:
 
     def withdraw(self, amount):
         self.__balance -= amount
-        print("통장에 ", amount, "가 입금되었음")
+        print("통장에 ", amount, "가 출금되었음")
         return self.__balance
 
     def deposit(self, amount):
         self.__balance += amount
-        print("통장에서 ", amount, "가 출금되었음")
+        print("통장에서 ", amount, "가 입금되었음")
         return self.__balance
     
 
